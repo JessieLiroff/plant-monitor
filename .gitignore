@@ -1,0 +1,5 @@
+# WiFi credentials (keep out of git)
+secrets.h
+
+# macOS Finder metadata
+.DS_Store
