@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "start": "node --env-file=.env src/index.ts",
+    "dev": "node --watch --env-file=.env src/index.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,7 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^26.6.7",
+    "prettier": "^3.10.1",
     "typescript": "^7.0.2"
   }
 }
